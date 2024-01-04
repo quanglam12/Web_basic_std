@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+}
+  
+header {
+position: fixed;
+top:0;
+width: 1435px;
+z-index: 100;
+display: flex;
+justify-content: space-between;
+padding: 20px;
+background-color:darkgreen;
+border-bottom: 1px solid #ddd;
+color: burlywood;
+}
+header div {
+    padding: 5px;
+}
+.diachi div {
+    position: absolute;
+    top: 70px;
+}
+
+.warehouse {
+display: flex;
+flex-direction: column;
+}
+
+.logo {
+font-size: 24px;
+font-weight: bold;
+}
+
+.user {
+margin-left: auto;
+}
+
+.tab {
+margin-top: 120px;
+overflow: hidden;
+border: 1px solid #ccc;
+background-color: #f1f1f1;
+}
+
+.tab button {
+background-color: inherit;
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 14px 16px;
+transition: 0.3s;
+font-size: 17px;
+}
+
+.tab button:hover {
+background-color: #ddd;
+}
+
+.tab button.active {
+background-color: grey;
+}
+
+.tabcontent {
+display: none;
+padding: 6px 12px;
+border: 1px solid #ccc;
+border-top: none;
+}
+.tabcontent .main {
+padding: 20px;
+}
+.tabcontent .table {
+width: 100%;
+border-collapse: collapse;
+}
+.tabcontent .table th, .table td {
+border: 1px solid #ddd;
+padding: 8px
+}
+.tabcontent .table th {
+background-color: #f8f8f8;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Logo</div>
+  <div class="tenkho">
+    <h2>Kho 1</h2>
+  </div>
+  <div class="diachi">
+    <div>Địa chỉ: 203 Lê Thánh Tông</div>
+  </div>
+  <div class="user">User: Login / Logout</div>
+</header>
+
+<div class="tab">
+    <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'NhapKho')">Nhập kho</button>
+    <button class="tablinks" onclick="openTab(event, 'XuatKho')">Xuất kho</button>
+    <button class="tablinks" onclick="openTab(event, 'KieuKho')">Kiểu kho</button>
+</div>
+
+<div id="NhapKho" class="tabcontent">
+  <div class="main">
+    <h3>NHẬP KHO</h3>
+    <label for="hang">Hãng sản xuất:</label>
+    <select id="hang">
+      <option value="">Chọn...</option>
+      <option value="MICHELIN">MICHELIN ...........</option>
+      <!-- Các option khác -->
+    </select>
+  
+    <label for="loai">Loại:</label>
+    <select id="loai">
+      <option value="">Chọn...</option>
+      <!-- Các option khác -->
+    </select>
+    <form action="/search" method="post">
+      <input type="text" id="search" name="search">
+      <input type="submit" value="Tìm kiếm">
+    </form>
+    <h4>Danh sách sản phẩm</h4>
+    <table class="table">
+      <tr>
+        <th>Thứ tự</th>
+        <th>Mã sp</th>
+        <th>Tên sản phẩm</th>
+        <th>Số lượng</th>
+        <th>            </th>
+      </tr>
+      <tr>
+      <th>1</th>
+      <th>BTT.BRIO</th>
+      <th>Bố thắng trước</th>
+      <th>15</th>
+      <th>
+        <button value="xem">Xem</button>
+        <button value="Nhap">Nhập</button>
+      </th>
+      </tr>
+      <tr>
+        <th>1</th>
+        <th>BTT.BRIO</th>
+        <th>Bố thắng trước</th>
+        <th>15</th>
+        <th>
+          <button value="xem">Xem</button>
+          <button value="Nhap">Nhập</button>
+        </th>
+        </tr>
+        <tr>
+          <th>1</th>
+          <th>BTT.BRIO</th>
+          <th>Bố thắng trước</th>
+          <th>15</th>
+          <th>
+            <button value="xem">Xem</button>
+            <button value="Nhap">Nhập</button>
+          </th>
+          </tr>
+          <tr>
+            <th>1</th>
+            <th>BTT.BRIO</th>
+            <th>Bố thắng trước</th>
+            <th>15</th>
+            <th>
+              <button value="xem">Xem</button>
+              <button value="Nhap">Nhập</button>
+            </th>
+            </tr>
+            <tr>
+              <th>1</th>
+              <th>BTT.BRIO</th>
+              <th>Bố thắng trước</th>
+              <th>15</th>
+              <th>
+                <button value="xem">Xem</button>
+                <button value="Nhap">Nhập</button>
+              </th>
+              </tr>
+
+              <tr>
+                <th>1</th>
+                <th>BTT.BRIO</th>
+                <th>Bố thắng trước</th>
+                <th>15</th>
+                <th>
+                  <button value="xem">Xem</button>
+                  <button value="Nhap">Nhập</button>
+                </th>
+                </tr>
+                <tr>
+                  <th>1</th>
+                  <th>BTT.BRIO</th>
+                  <th>Bố thắng trước</th>
+                  <th>15</th>
+                  <th>
+                    <button value="xem">Xem</button>
+                    <button value="Nhap">Nhập</button>
+                  </th>
+                  </tr>
+                  <tr>
+                    <th>1</th>
+                    <th>BTT.BRIO</th>
+                    <th>Bố thắng trước</th>
+                    <th>15</th>
+                    <th>
+                      <button value="xem">Xem</button>
+                      <button value="Nhap">Nhập</button>
+                    </th>
+                    </tr>
+                    <tr>
+                      <th>1</th>
+                      <th>BTT.BRIO</th>
+                      <th>Bố thắng trước</th>
+                      <th>15</th>
+                      <th>
+                        <button value="xem">Xem</button>
+                        <button value="Nhap">Nhập</button>
+                      </th>
+                      </tr>
+                      <tr>
+                        <th>1</th>
+                        <th>BTT.BRIO</th>
+                        <th>Bố thắng trước</th>
+                        <th>15</th>
+                        <th>
+                          <button value="xem">Xem</button>
+                          <button value="Nhap">Nhập</button>
+                        </th>
+                        </tr>
+                        <tr>
+                          <th>1</th>
+                          <th>BTT.BRIO</th>
+                          <th>Bố thắng trước</th>
+                          <th>15</th>
+                          <th>
+                            <button value="xem">Xem</button>
+                            <button value="Nhap">Nhập</button>
+                          </th>
+                          </tr>
+
+                          <tr>
+                            <th>1</th>
+                            <th>BTT.BRIO</th>
+                            <th>Bố thắng trước</th>
+                            <th>15</th>
+                            <th>
+                              <button value="xem">Xem</button>
+                              <button value="Nhap">Nhập</button>
+                            </th>
+                            </tr>
+                            <tr>
+                              <th>1</th>
+                              <th>BTT.BRIO</th>
+                              <th>Bố thắng trước</th>
+                              <th>15</th>
+                              <th>
+                                <button value="xem">Xem</button>
+                                <button value="Nhap">Nhập</button>
+                              </th>
+                              </tr>
+      <!-- Các hàng khác -->
+    </table>
+  </div>
+</div>
+
+<div id="XuatKho" class="tabcontent">
+  <h3>Xuất kho</h3>
+  <p>Nội dung của tab Xuất kho.</p>
+</div>
+
+<div id="KieuKho" class="tabcontent">
+  <h3>Kiểu kho</h3>
+  <p>Nội dung của tab Kiểu kho.</p>
+</div>
+
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+
+  evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
