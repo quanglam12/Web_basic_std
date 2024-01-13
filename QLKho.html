@@ -42,6 +42,8 @@
       <input type="text" id="search" name="search">
       <input type="submit" value="Tìm kiếm">
     </form>
+    <button onclick="sendData('Option 1')">Option 1</button>
+    <button onclick="sendData('Option 2')">Option 2</button>
     <h4>Danh sách sản phẩm</h4>
     <table class="table">
       <tr>
@@ -51,139 +53,6 @@
         <th>Số lượng</th>
         <th>            </th>
       </tr>
-      <tr>
-      <th>1</th>
-      <th>BTT.BRIO</th>
-      <th>Bố thắng trước</th>
-      <th>15</th>
-      <th>
-        <button value="xem">Xem</button>
-        <button value="Nhap">Nhập</button>
-      </th>
-      </tr>
-      <tr>
-        <th>1</th>
-        <th>BTT.BRIO</th>
-        <th>Bố thắng trước</th>
-        <th>15</th>
-        <th>
-          <button value="xem">Xem</button>
-          <button value="Nhap">Nhập</button>
-        </th>
-        </tr>
-        <tr>
-          <th>1</th>
-          <th>BTT.BRIO</th>
-          <th>Bố thắng trước</th>
-          <th>15</th>
-          <th>
-            <button value="xem">Xem</button>
-            <button value="Nhap">Nhập</button>
-          </th>
-          </tr>
-          <tr>
-            <th>1</th>
-            <th>BTT.BRIO</th>
-            <th>Bố thắng trước</th>
-            <th>15</th>
-            <th>
-              <button value="xem">Xem</button>
-              <button value="Nhap">Nhập</button>
-            </th>
-            </tr>
-            <tr>
-              <th>1</th>
-              <th>BTT.BRIO</th>
-              <th>Bố thắng trước</th>
-              <th>15</th>
-              <th>
-                <button value="xem">Xem</button>
-                <button value="Nhap">Nhập</button>
-              </th>
-              </tr>
-
-              <tr>
-                <th>1</th>
-                <th>BTT.BRIO</th>
-                <th>Bố thắng trước</th>
-                <th>15</th>
-                <th>
-                  <button value="xem">Xem</button>
-                  <button value="Nhap">Nhập</button>
-                </th>
-                </tr>
-                <tr>
-                  <th>1</th>
-                  <th>BTT.BRIO</th>
-                  <th>Bố thắng trước</th>
-                  <th>15</th>
-                  <th>
-                    <button value="xem">Xem</button>
-                    <button value="Nhap">Nhập</button>
-                  </th>
-                  </tr>
-                  <tr>
-                    <th>1</th>
-                    <th>BTT.BRIO</th>
-                    <th>Bố thắng trước</th>
-                    <th>15</th>
-                    <th>
-                      <button value="xem">Xem</button>
-                      <button value="Nhap">Nhập</button>
-                    </th>
-                    </tr>
-                    <tr>
-                      <th>1</th>
-                      <th>BTT.BRIO</th>
-                      <th>Bố thắng trước</th>
-                      <th>15</th>
-                      <th>
-                        <button value="xem">Xem</button>
-                        <button value="Nhap">Nhập</button>
-                      </th>
-                      </tr>
-                      <tr>
-                        <th>1</th>
-                        <th>BTT.BRIO</th>
-                        <th>Bố thắng trước</th>
-                        <th>15</th>
-                        <th>
-                          <button value="xem">Xem</button>
-                          <button value="Nhap">Nhập</button>
-                        </th>
-                        </tr>
-                        <tr>
-                          <th>1</th>
-                          <th>BTT.BRIO</th>
-                          <th>Bố thắng trước</th>
-                          <th>15</th>
-                          <th>
-                            <button value="xem">Xem</button>
-                            <button value="Nhap">Nhập</button>
-                          </th>
-                          </tr>
-
-                          <tr>
-                            <th>1</th>
-                            <th>BTT.BRIO</th>
-                            <th>Bố thắng trước</th>
-                            <th>15</th>
-                            <th>
-                              <button value="xem">Xem</button>
-                              <button value="Nhap">Nhập</button>
-                            </th>
-                            </tr>
-                            <tr>
-                              <th>1</th>
-                              <th>BTT.BRIO</th>
-                              <th>Bố thắng trước</th>
-                              <th>15</th>
-                              <th>
-                                <button value="xem">Xem</button>
-                                <button value="Nhap">Nhập</button>
-                              </th>
-                              </tr>
-      <!-- Các hàng khác -->
     </table>
   </div>
 </div>
@@ -198,6 +67,19 @@
   <p>Nội dung của tab Kiểu kho.</p>
 </div>
 
+  <script>
+function sendData(option) {
+  fetch('http://localhost:3000/data', {
+    method: 'POST', 
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({option: option}),
+  })
+  .then(response => response.json())
+  .then(data => console.log(data));
+}
+</script>
 <script>
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
